@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #fef6e4;
+  --text-color: #333;
+  --btn-color: #ff8c42;
+  --btn-text: white;
+}
+
+body.dark {
+  --bg-color: #1f1f1f;
+  --text-color: #f1f1f1;
+  --btn-color: #d17b4e;
+  --btn-text: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.screen {
+  display: none;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.screen.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--btn-color);
+  color: var(--btn-text);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--btn-color);
+  color: var(--btn-text);
+  padding: 10px;
+}
+
+.main-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.app-btn {
+  background: var(--btn-color);
+  color: var(--btn-text);
+  padding: 15px;
+  font-size: 18px;
+}
+
+#section-content {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.folder {
+  background: #ffd6a5;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+}

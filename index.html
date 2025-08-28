@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class & Teacher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Pantalla de Login -->
+  <div id="login-screen" class="screen active">
+    <h1>Class & Teacher</h1>
+    <input type="email" id="email" placeholder="Correo">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button id="login-btn">Iniciar Sesión</button>
+    <button id="theme-toggle">Modo Oscuro</button>
+  </div>
+
+  <!-- Pantalla Principal -->
+  <div id="main-screen" class="screen">
+    <header>
+      <button id="back-btn">⟵</button>
+      <h2>Inicio</h2>
+      <button id="logout-btn">Cerrar Sesión</button>
+    </header>
+
+    <div class="main-buttons">
+      <button class="app-btn" data-section="projects">📁 Proyectos</button>
+      <button class="app-btn" data-section="calendar">📅 Calendario</button>
+      <button class="app-btn" data-section="assistant">🤖 Asistente</button>
+    </div>
+
+    <div id="section-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
